@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Mati99 VIP – Official App Download</title>
-  <meta name="description" content="Download the official MATI99 VIP Matka app (Android APK). Play Single, Jodi, Patti/Panel, Sangam; see live results & charts with 24×7 support." />
+  <meta name="description" content="Download the official MATI99 VIP Matka app (Android APP). Play Single, Jodi, Patti/Panel, Sangam; see live results & charts with 24×7 support." />
 
   <!-- Open Graph / Social -->
   <meta property="og:title" content="Mati99 VIP – Official App Download" />
@@ -146,12 +146,12 @@
     <!-- Hero -->
     <section class="hero">
       <div class="left card">
-        <div class="pill">Android APK</div>
+        <div class="pill">Android APP</div>
         <h1>Download the <span class="accent">Mati99 VIP</span> App</h1>
         <p class="sub">Matka play & results — <strong>Single (Ank 0–9)</strong>, <strong>Jodi (00–99)</strong>, <strong>Patti/Panel (000–999)</strong>, <strong>Sangam</strong> & more. Secure, fast, and 24×7 support.</p>
 
         <div class="actions">
-          <a id="dlPrimary" class="btn gold" href="#">⬇️ Download APK</a>
+          <a id="dlPrimary" class="btn gold" href="#">⬇️ Download APP</a>
           <a id="dlMirror" class="btn primary" href="#"><span class="dot"></span> Mirror</a>
         </div>
 
@@ -205,7 +205,7 @@
 
     <!-- How to install -->
     <section id="how" class="how">
-      <div class="step"><div>①</div><h4>Download the APK</h4><p>Tap <strong>Download APK</strong> and save the file.</p></div>
+      <div class="step"><div>①</div><h4>Download the APP</h4><p>Tap <strong>Download APP</strong> and save the file.</p></div>
       <div class="step"><div>②</div><h4>Allow Install</h4><p>When prompted, allow installs from your browser (Settings → Security → Unknown sources).</p></div>
       <div class="step"><div>③</div><h4>Install & Login</h4><p>Open the file, install, then sign up or log in.</p></div>
     </section>
@@ -215,7 +215,7 @@
       <h2>FAQ</h2>
       <details><summary>Is this the official Mati99 VIP app?</summary><div>Yes. This is the official Matka app download page for Android.</div></details>
       <details><summary>What can I play?</summary><div>Matka play types: <strong>Single (Ank)</strong>, <strong>Jodi</strong>, <strong>Patti/Panel</strong>, <strong>Half/Full Sangam</strong>. Live results & charts are included.</div></details>
-      <details><summary>Is it on Google Play?</summary><div>No. Install the APK directly on Android 8.0+.</div></details>
+      <details><summary>Is it on Google Play?</summary><div>No. Install the APP directly on Android 8.0+.</div></details>
       <details><summary>Install not allowed?</summary><div>Go to Settings → Security → allow installs from the browser you used to download.</div></details>
     </section>
 
@@ -234,7 +234,7 @@
     <!-- Sticky Download (mobile) -->
     <div id="dlBar" class="dlbar">
       <div class="row">
-        <a id="mDlPrimary" class="btn gold" href="#">⬇️ Download APK</a>
+        <a id="mDlPrimary" class="btn gold" href="#">⬇️ Download APP</a>
         <a id="mDlMirror" class="btn primary" href="#"><span class="dot"></span> Mirror</a>
       </div>
     </div>
@@ -242,7 +242,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="actions" style="width:100%;justify-content:flex-start;gap:10px">
-        <a class="btn gold" id="ftDlPrimary" href="#">⬇️ Download APK</a>
+        <a class="btn gold" id="ftDlPrimary" href="#">⬇️ Download APP</a>
         <a class="btn primary" id="ftDlMirror" href="#"><span class="dot"></span> Mirror</a>
       </div>
       <div style="color:var(--muted)">© <span id="year"></span> Mati99 VIP</div>
@@ -257,8 +257,8 @@
   <script>
     (function(){
       // ===== Configure links & build meta here =====
-      const PRIMARY_APK = 'https://get.mati99.net/Mati99.apk'; // change if hosting APK elsewhere
-      const MIRROR_APK  = 'https://drive.google.com/file/d/1nzyU8f4mtS2oeoTL-B2KwE40e_HSgxIE/view?usp=sharing';
+      const PRIMARY_APP = 'https://get.mati99.net/Mati99.APP'; // change if hosting APP elsewhere
+      const MIRROR_APP  = 'https://drive.google.com/file/d/1nzyU8f4mtS2oeoTL-B2KwE40e_HSgxIE/view?usp=sharing';
       const BUILD_VERSION = 'v1.0.1';
 
       // Assign links FIRST
@@ -266,12 +266,12 @@
       const $ = id => document.getElementById(id);
       const setHref = (a, url) => { if(a) a.href = url; };
 
-      setHref($('dlPrimary'), PRIMARY_APK);
-      setHref($('mDlPrimary'), PRIMARY_APK);
-      setHref($('ftDlPrimary'), PRIMARY_APK);
-      setHref($('dlMirror'),  MIRROR_APK);
-      setHref($('mDlMirror'), MIRROR_APK);
-      setHref($('ftDlMirror'),MIRROR_APK);
+      setHref($('dlPrimary'), PRIMARY_APP);
+      setHref($('mDlPrimary'), PRIMARY_APP);
+      setHref($('ftDlPrimary'), PRIMARY_APP);
+      setHref($('dlMirror'),  MIRROR_APP);
+      setHref($('mDlMirror'), MIRROR_APP);
+      setHref($('ftDlMirror'),MIRROR_APP);
 
       // Then append UTMs/fbclid
       const q = location.search;
@@ -297,8 +297,8 @@
 
       // Tracking
       const trackDl = (label)=>{
-        try{ if(window.fbq){ fbq('trackCustom','APKDownload',{label}); } }catch(e){}
-        try{ if(window.gtag){ gtag('event','apk_download',{ event_label: label }); } }catch(e){}
+        try{ if(window.fbq){ fbq('trackCustom','APPDownload',{label}); } }catch(e){}
+        try{ if(window.gtag){ gtag('event','APP_download',{ event_label: label }); } }catch(e){}
       };
       [['dlPrimary','primary'],['dlMirror','mirror'],
        ['mDlPrimary','primary_mobile'],['mDlMirror','mirror_mobile'],
